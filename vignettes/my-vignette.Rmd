@@ -1,0 +1,36 @@
+---
+title: "Who ever care about the (art of R) scripts?"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## ARTofR
+
+ARTofR is designed to make comment decoration like this:
+
+>  #........................ARTofR line break.......................
+
+It is a wrapper of bannerCommenter::banner(), written with thanks to the author, Bill Venables
+
+## Installation
+
+You can install the developing version of ARTofR from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("Hzhang-ouce/ARTofR")
+```
+## Please go to the github page for latest instruction:
+
+[Hzhang-ouce-ARTofR](https://github.com/Hzhang-ouce/ARTofR)
+
