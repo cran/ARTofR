@@ -19,7 +19,13 @@ author, Bill Venables
 
 ## Installation
 
-You can install the released version of ARTofR from
+Install from CRAN:
+
+``` r
+install.packages("ARTofR")
+```
+
+OR you can install the beta version of ARTofR from
 [GitHub](https://github.com/) with:
 
 ``` r
@@ -27,26 +33,45 @@ You can install the released version of ARTofR from
 devtools::install_github("Hzhang-ouce/ARTofR")
 ```
 
-## COMMON WORKFLOW OF THIS PACKAGE
+## Usage 1 - copy and paste
 
 > 1.  type your text in any text editor
 > 2.  copy your text
-> 3.  call xxx\_box() or xxx\_box1() etc in R console
+> 3.  call xxx\_box() or xxx\_box1() etc without arguments in R console
 > 4.  NO NEED to copy again!!!
 > 5.  paste into your R script
 
 For example:
 ![image](https://raw.githubusercontent.com/Hzhang-ouce/ARTofR/master/Screenshot138092.png?branch=master)
 
-# All functions:
+## Usage 2 - hand-typing
 
-### Title
+``` r
+xxx_title2('your title')
+
+
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+##                                  your title                              ----
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+xxx_box1('your comments')
+
+
+#...............................................................................
+#                                                                              .
+#  your comments                                                               .
+#                                                                              .
+#...............................................................................
+```
+
+## FUNCTION1: xxx\_title
 
 **xxx\_title() will automatically bring you a navigation panel**
 
 **but xxx\_divider will not**
 
-Check it here:
+For example:
 ![this](https://raw.githubusercontent.com/Hzhang-ouce/ARTofR/master/Screenshot13809.png?branch=master)
 
 ``` r
@@ -76,7 +101,7 @@ Check it here:
 ##~~~~~~~~~~~~~~~~
 ```
 
-### line break
+## FUNCTION2: xxx\_divider
 
 You need to turn-off `auto-indent` in `options\code` of R studio, to
 keep the spaces before the line break
@@ -101,26 +126,7 @@ keep the spaces before the line break
      #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ```
 
-### Paragraph
-
-``` r
-   xxx_box1('ARTofRARTofRARTofR')
-
-#...............................................................................
-#                                                                              .
-#  ARTofRARTofRARTofR                                                          .
-#                                                                              .
-#...............................................................................
-
-
-   xxx_box1('ARTofRARTofRARTofR',center = T)
-   
-#...............................................................................
-#                                                                              .
-#                              ARTofRARTofRARTofR                              .
-#                                                                              .
-#...............................................................................
-```
+## FUNCTION3: xxx\_box
 
 **Copy this paragraph:**
 
@@ -174,7 +180,7 @@ Yes, even my grandmother like it!
 #...............................................................................
 ```
 
-### List
+## FUNCTION4: xxx\_list
 
 **Copy this list:**
 

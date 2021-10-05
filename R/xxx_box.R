@@ -1,7 +1,7 @@
 
-#' Box or list of comments
+#' Convert sentences into a box of comments
 #'
-#' Please refer to the github page <github.com/Hzhang-ouce/ARTofR> for more instructions.\cr
+#' For user guide, please refer to <https://github.com/Hzhang-ouce/ARTofR>\cr
 #'
 #' xxx_box is for paragraph, xxx_list is for bullet points or numbered list.\cr
 #' Number 1 in xxx_box1 and xxx_list1 imply style 1.\cr
@@ -42,8 +42,8 @@ xxx_box<-function(mystring=NULL, center=FALSE){
     storage2<-strwrap(storage,width=75)
   }else{
     storage2=''
-    storage = mystring
-    for (i in 1:length(storage)) {
+   storage = mystring[mystring != ""] #remove enpty row
+   for (i in 1:length(storage)) {
       storage2[i]<-fold_it(storage[i],maxChar = 75)
       storage2[i]<-paste0('',storage2[i],'\n')
     }
@@ -70,7 +70,7 @@ xxx_box1<-function(mystring=NULL, center=FALSE){
     storage2<-strwrap(storage,width=75)
   }else{
     storage2=''
-    storage = mystring
+    storage = mystring[mystring != ""] #remove enpty row
     for (i in 1:length(storage)) {
       storage2[i]<-fold_it(storage[i],maxChar=75)
       storage2[i]<-paste0('',storage2[i],'\n')
