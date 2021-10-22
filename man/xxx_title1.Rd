@@ -2,11 +2,14 @@
 % Please edit documentation in R/xxx_title.R
 \name{xxx_title1}
 \alias{xxx_title1}
+\alias{xxx_title0}
 \alias{xxx_title2}
 \alias{xxx_title3}
 \title{Insert a title}
 \usage{
 xxx_title1(mystring = NULL)
+
+xxx_title0(mystring = NULL)
 
 xxx_title2(mystring = NULL)
 
@@ -25,12 +28,15 @@ For user guide, please refer to \url{https://github.com/Hzhang-ouce/ARTofR}\cr
 \details{
 There are three levels of titles, inserting a title with xxx_title() will also add a section in Rstudio automatically.\cr
 Please note that a super long title string will result in an error\cr
-xxx_title1() is the largest title.\cr
-xxx_title2() is the middle size title.\cr
-xxx_title3() is the smallest title.\cr
+xxx_title0() was designed as the main title of the whole script\cr
+xxx_title1() is the largest header\cr
+xxx_title2() is the middle size header\cr
+xxx_title3() is the smallest header\cr
 }
 \section{Functions}{
 \itemize{
+\item \code{xxx_title0}: the middle size title
+
 \item \code{xxx_title2}: the middle size title
 
 \item \code{xxx_title3}: the smallest title
@@ -48,6 +54,7 @@ xxx_title3() is the smallest title.\cr
 #...............................................
 # # OTHER USAGE
 
+xxx_title0('my title')
 xxx_title1('my title')
 xxx_title2('my title')
 xxx_title3('my title')

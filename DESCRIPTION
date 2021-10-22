@@ -1,6 +1,6 @@
 Package: ARTofR
 Title: Who Ever Care About the [Art of R] Scripts?
-Version: 0.2.3
+Version: 0.3.3
 Authors@R: 
     person(given = "Huanyuan",
            family = "Zhang",
@@ -16,8 +16,8 @@ Suggests: rmarkdown, knitr
 VignetteBuilder: knitr
 Date: 2021-10-03 23:20:01 UTC
 NeedsCompilation: no
-Packaged: 2021-10-05 08:50:04 UTC; Huanyuan
+Packaged: 2021-10-22 13:46:48 UTC; Huanyuan
 Author: Huanyuan Zhang [aut, cre] (<https://orcid.org/0000-0003-4801-8771>)
 Maintainer: Huanyuan Zhang <hyzhang1996@gmail.com>
 Repository: CRAN
-Date/Publication: 2021-10-05 09:50:09 UTC
+Date/Publication: 2021-10-22 16:10:06 UTC
